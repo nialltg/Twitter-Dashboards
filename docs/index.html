@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<style>
+h1 { 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+</style>
+<html>
+<body>
+<h1>HM Government Department Twitter Account Dashboards</h1>
+<p>On this page you can select from a series of pre-generated weekly 
+  dashboards covering a range of analytics on UK Government twitter accouunts.</p>
+  
+<select onchange="location = this.options[this.selectedIndex].value;">
+    <option>Please select</option>
+    <option value="https://dcmsstats.github.io/current/Cabinet%20Office/dashboard.html">Cabinet Office</option>
+    <option value="https://dcmsstats.github.io/current/DExEU/dashboard.html">Department for Exiting the European Union</option>
+    <option value="https://dcmsstats.github.io/current/DCLG/dashboard.html">Department for Communities and Local Government</option>
+    <option value="https://dcmsstats.github.io/current/DCMS/dashboard.html">Department for Culture, Media and Sport</option>
+    <option value="https://dcmsstats.github.io/current/DIT/dashboard.html">Department for International Trade</option>
+</select>
+    
+<p>This page was made by a data scientist working in the Department for Culture, Media and Sport. 
+    For information, please contact <a href="mailto:evidence@culture.gov.uk">evidence@culture.gov.uk</a>.</p>
+
+</body>
+</html>
