@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <style>
-h1 { 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+    h1 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        display: block;
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    span.header {
+        vertical-align: bottom;
+        text-align: right;
+        display: table-cell
+    }
+
+    img.header {
+        vertical-align: bottom;
+        display: table-cell;
+        max-height: 15%
+    }
+
+    div.header {
+        display: table;
+        width: 100%
+    }
+
+    body {
+        margin: 2%;
+        padding: 0
+    }
+
 </style>
 <html>
-<body>
-<h1>HM Government Department Twitter Account Dashboards</h1>
-<p>On this page you can select from a series of pre-generated weekly 
-  dashboards covering a range of analytics on UK Government twitter accouunts.</p>
-    
-<p>To request an additional account be tracked on this platform, please 
-    <a href="mailto:ukgovtwitterdashboards@googlegroups.com">get in touch</a>.</p>
-  
-<select onchange="location = this.options[this.selectedIndex].value;">
-    <option>Please select</option>
-    <option value="/Twitter-Dashboards/current/BEIS/dashboard.html">Department for Business, Energy and Industrial Strategy</option>
-    <option value="/Twitter-Dashboards/current/Cabinet%20Office/dashboard.html">Cabinet Office</option>
-    <option value="/Twitter-Dashboards/current/DCLG/dashboard.html">Department for Communities and Local Government</option>
-    <option value="/Twitter-Dashboards/current/DCMS/dashboard.html">Department for Culture, Media and Sport</option>
-    <option value="/Twitter-Dashboards/current/DExEU/dashboard.html">Department for Exiting the European Union</option>
-    <option value="/Twitter-Dashboards/current/Defra/dashboard.html">Department for the Environment, Food and Rural Affairs</option>
-    <option value="/Twitter-Dashboards/current/DfE/dashboard.html">Department for Education</option>
-    <option value="/Twitter-Dashboards/current/DfID/dashboard.html">Department for International Development</option>
-    <option value="/Twitter-Dashboards/current/DfT/dashboard.html">Department for Transport</option>
-    <option value="/Twitter-Dashboards/current/DH/dashboard.html">Department of Health</option>
-    <option value="/Twitter-Dashboards/current/DIT/dashboard.html">Department for International Trade</option>
-    <option value="/Twitter-Dashboards/current/DWP/dashboard.html">Department for Work and Pensions</option>
-    <option value="/Twitter-Dashboards/current/DWP%20Press%20Office/dashboard.html">Department for Work and Pensions (Press Office)</option>
-    <option value="/Twitter-Dashboards/current/FCO/dashboard.html">Foreign and Commonwealth Office</option>
-    <option value="/Twitter-Dashboards/current/HMT/dashboard.html">HM Treasury</option>
-    <option value="/Twitter-Dashboards/current/Home%20Office/dashboard.html">Home Office</option>
-    <option value="/Twitter-Dashboards/current/MoD/dashboard.html">Ministry of Defence</option>
-    <option value="/Twitter-Dashboards/current/MoJ/dashboard.html">Ministry of Justice</option>
-    <option value="/Twitter-Dashboards/current/No10/dashboard.html">Number 10</option>
-    <option value="/Twitter-Dashboards/current/Scotland%20Office/dashboard.html">Scotland Office</option>
-    <option value="/Twitter-Dashboards/current/Wales%20Office/dashboard.html">Office of the Secretary of State for Wales</option>
-    <option value="/Twitter-Dashboards/current/IFA/dashboard.html">Institute for Apprenticeships</option>
-    <option value="/Twitter-Dashboards/current/FE-accounts/dashboard.html">FE accounts</option>
-</select>
-    
-<!---<p>This page was made by a data scientist working in the Department for Culture, Media and Sport. 
-    For information, please contact <a href="mailto:evidence@culture.gov.uk">evidence@culture.gov.uk</a>.</p>--->
 
+<body>
+
+    <div class="header">
+        <span class="header"><img class="header" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/HM_Government_logo.svg/1280px-HM_Government_logo.svg.png" /></span>
+        <span class="header"><h1>HM Government Department Twitter Account Dashboards<h1/></span>
+    </div>
+    <div style="width:100%">
+
+        <p>On this page you can select from a series of pre-generated weekly dashboards covering a range of analytics on UK Government twitter accouunts.</p>
+
+        <p>To request an additional account be tracked on this platform, please
+            <a href="mailto:ukgovtwitterdashboards@googlegroups.com">get in touch</a>.</p>
+
+        <select onchange="location = this.options[this.selectedIndex].value;">
+            <option value="/">Please select</option>
+            <option value="/Twitter-Dashboards/current/BEIS/dashboard.html">Department for Business, Energy and Industrial Strategy</option>
+            <option value="/Twitter-Dashboards/current/Cabinet%20Office/dashboard.html">Cabinet Office</option>
+            <option value="/Twitter-Dashboards/current/DCLG/dashboard.html">Department for Communities and Local Government</option>
+            <option value="/Twitter-Dashboards/current/DCMS/dashboard.html">Department for Culture, Media and Sport</option>
+            <option value="/Twitter-Dashboards/current/DExEU/dashboard.html">Department for Exiting the European Union</option>
+            <option value="/Twitter-Dashboards/current/Defra/dashboard.html">Department for the Environment, Food and Rural Affairs</option>
+            <option value="/Twitter-Dashboards/current/DfE/dashboard.html">Department for Education</option>
+            <option value="/Twitter-Dashboards/current/DfID/dashboard.html">Department for International Development</option>
+            <option value="/Twitter-Dashboards/current/DfT/dashboard.html">Department for Transport</option>
+            <option value="/Twitter-Dashboards/current/DH/dashboard.html">Department of Health</option>
+            <option value="/Twitter-Dashboards/current/DIT/dashboard.html">Department for International Trade</option>
+            <option value="/Twitter-Dashboards/current/DWP/dashboard.html">Department for Work and Pensions</option>
+            <option value="/Twitter-Dashboards/current/DWP%20Press%20Office/dashboard.html">Department for Work and Pensions (Press Office)</option>
+            <option value="/Twitter-Dashboards/current/FCO/dashboard.html">Foreign and Commonwealth Office</option>
+            <option value="/Twitter-Dashboards/current/HMT/dashboard.html">HM Treasury</option>
+            <option value="/Twitter-Dashboards/current/Home%20Office/dashboard.html">Home Office</option>
+            <option value="/Twitter-Dashboards/current/MoD/dashboard.html">Ministry of Defence</option>
+            <option value="/Twitter-Dashboards/current/MoJ/dashboard.html">Ministry of Justice</option>
+            <option value="/Twitter-Dashboards/current/No10/dashboard.html">Number 10</option>
+            <option value="/Twitter-Dashboards/current/Scotland%20Office/dashboard.html">Scotland Office</option>
+            <option value="/Twitter-Dashboards/current/Wales%20Office/dashboard.html">Office of the Secretary of State for Wales</option>
+            <option value="/Twitter-Dashboards/current/IFA/dashboard.html">Institute for Apprenticeships</option>
+            <option value="/Twitter-Dashboards/current/FE-accounts/dashboard.html">FE accounts</option>
+        </select>
+
+        <!---<p>This page was made by a data scientist working in the Department for Culture, Media and Sport. 
+    For information, please contact <a href="mailto:evidence@culture.gov.uk">evidence@culture.gov.uk</a>.</p>--->
+    </div>
 </body>
+
 </html>
