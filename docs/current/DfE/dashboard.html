@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+    <html>
+    
+    <head>
+        
+        <STYLE type="text/css">
+            @import "compass/css3";
+            html,
+            body {
+                height: 100%;
+            }
+            
+            h1 {
+                height: inherit;
+                vertical-align: bottom;
+                text-align: right;
+                margin: 0 0 0 0;
+                display: table-cell;
+                display: inline;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 40px;
+            }
+            
+            h2 {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 18px;
+                margin: 0 0 0 0;
+            }
+            
+            p {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                margin: 0 0 0 0;
+            }
+            
+            p.b {
+                font-weight: 900;
+                color: rgba(0,88,161,1)
+                ;
+            }
+            
+            li {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                margin-left: 2px;
+            }
+            
+            ol {
+                margin-left: 20px;
+                padding-left: 0px;
+            }
+            
+            div {
+                <!--- border-style: dotted;
+                --->
+            }
+            
+            div.header {
+                display: table;
+                width: 100%
+            }
+            
+            div.line {
+                height: 5px;
+                width 100%;
+                background-color: rgba(0,88,161,1)
+                ;
+                margin-top: 2px;
+            }
+            
+            div.tweet {
+                width: 98%;
+                background-color: rgba(0,88,161,0.3)
+                ;
+                font-family: "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+                font-size: 16px;
+                margin:2px;
+                border-radius:8px;
+                padding:4px;
+                display: -webkit-flex;
+                -webkit-flex-direction: row;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            div.listbox {
+                width: 98%;
+                background-color: rgba(0,88,161,0.3)
+                ;
+                font-family: "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+                margin:1px;
+                border-radius:8px;
+                padding:2px;
+            }
+            
+            .container {
+                max-height:18vh;
+                overflow:hidden;
+            }
+            
+            .container img {
+                width:100%
+            }
+            
+            img.header {
+                vertical-align: bottom;
+                display: table-cell;
+                max-height: 15%
+            }
+            
+            img.wc {
+                display: table-cell;
+                max-width: 100%
+            }
+            
+            img.pic {
+                max-width: 100%;
+                max-height: 20%;
+                margin-left: auto;
+                margin-right: auto
+            }
+            
+            span.header {
+                vertical-align: bottom;
+                text-align: right;
+                display: table-cell
+            }
+            
+            div.numberCircle {
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                padding: 4px;
+                background: #fff;
+                border: 2px solid rgba(0,88,161,1)
+                ;
+                color: rgba(0,88,161,1)
+                ;
+                text-align: center;
+                font: 16px Arial,
+                sans-serif;
+                font-weight: bold;
+                order:1;
+                flex-shrink: 0;
+            }
+            
+            img.profile {
+                border-radius: 6px;
+                width: 60px;
+            }
+            
+            div.tweetext {
+                order: 2;
+                margin: 3px;
+            }
+        
+        </STYLE>
+        
+        <title>Twitter Dashboard</title>
+    
+    </head>
+    
+    <body>
+        
+        <div class="header">
+            <span class="header"><img class="header" src="https://github.com/nialltg/Twitter-Dashboards/raw/master/docs/assets/DfE.png" /></span>
+            <span class="header"><h1>Twitter Dashboard<h1/></span>
+            <p>243,561 followers, 21,710 tweets</p>
+            <p>18 June 2017 - 27 June 2017</p>
+        </div>
+        <div class="line"></div>
+        <div style="width: 100%; height: 80%;">
+            <div style="float:left; width: 49%;">
+                <div style="float:left; width: 49%;">
+                    <h2>28 tweets from DfE:</h2>
+                    <img class="wc" src="main-wc.png" />
+                    <div class="line"></div>
+                    <div style="width: 48%; float:left; margin-left:0%;" class="listbox">
+                        <p><b>Most Used Hashtags</b></p>
+                        <ol>
+                            <li>ldweek17</li>
+                            <li>queensspeech</li>
+                            <li>primaryassessment</li>
+                            <li>schoolleader</li>
+                            <li>teacher</li>
+                            <li>apprenticeships</li>
+                            <li>tefresults</li>
+                            <li>gcses</li>
+                        </ol>
+                    </div>
+                    <div style="float:right; width: 48%;" class="listbox">
+                        <p><b>Most Mentioned Users</b></p>
+                        <ol>
+                            <li>mencap_charity</li>
+                            <li>gharrower</li>
+                            <li>getingofar</li>
+                            <li>dianaaward</li>
+                            <li>yourheathrow</li>
+                            <li>smcommission</li>
+                            <li>hefce</li>
+                            <li>getintoteaching</li>
+                        </ol>
+                    </div>
+                </div>
+                <div style="float:right; width: 49%;">
+                    <h2>671 tweets mentioning DfE:</h2>
+                    <img class="wc" src="all-wc.png"/>
+                    <div class="line"></div>
+                    <div style="width: 48%; float:left; margin-left:0%;" class="listbox">
+                        <p><b>Most Used Hashtags</b></p>
+                        <ol>
+                            <li>aelp2017</li>
+                            <li>edtech</li>
+                            <li>schools</li>
+                            <li>ldweek17</li>
+                            <li>oxfordbaem</li>
+                            <li>londonedtech</li>
+                            <li>gcse</li>
+                            <li>educationfest</li>
+                        </ol>
+                    </div>
+                    <div style="float:right; width: 48%;" class="listbox">
+                        <p><b>Most Engaged Users</b></p>
+                        <ol>
+                            <li>feweek</li>
+                            <li>jpembroke</li>
+                            <li>nicklinford</li>
+                            <li>bobharrisonset</li>
+                            <li>ty_goddard</li>
+                            <li>ssat</li>
+                            <li>miyk99</li>
+                            <li>stephenexley</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div style="float:left; width: 100%;">
+                    <div class="line"></div>
+                    <h2>DfE retweets:</h2>
+                    <p style="font-size: 20px; display: inline;">DfE retweeted </p> 
+                    <p class="b" style="font-size: 20px; display:inline">19 tweets</p>
+                    <p style="font-size: 20px; display: inline;"> from </p>
+                    <p class="b" style="font-size: 20px; display: inline;">14 users</p>
+                </div>
+                
+                <div style="float:left; width: 100%;">
+                    <div class="line"></div>
+                    <h2>Engagement:</h2>
+                    <div style="float:left; width: 33.2%;">
+                        <img class="wc" src="rts-time.png"/>
+                    </div>
+                    <div style="float:left; width: 33.2%;">
+                        <img class="wc" src="favs-time.png"/>
+                    </div>
+                    <div style="float:right; width: 33.2%;">
+                        <img class="wc" src="replies-time.png"/>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+            
+            <div style="float:right; width: 49%;">
+                <h2>Most popular tweets:</h2>
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/874228002145619968/io3Tt3Lw_normal.jpg" class="profile"></div>
+                    <div class="tweetext">
+                        <p><b>educationgovuk</b>
+                            <br>We are supporting Learning Disability Week this week - highlighting the opportunities #apprenticeships bring #LDWeek17 @GetInGoFar https://t.co/2frhsvpPWV</p>
+                        <p><b>53</b> likes, <b>65</b> retweets - <a href=https://twitter.com/statuses/877105016368181248>10:05 20 June 2017</a></p>
+                    </div>
+                </div>
+                
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/874228002145619968/io3Tt3Lw_normal.jpg" class="profile"></div>
+                    <div class="tweetext">
+                        <p><b>educationgovuk</b>
+                            <br>We are breaking down barriers for people with learning difficulties or disabilities. See: https://t.co/kjQx8AF8xl #LDWeek17 #apprenticeships https://t.co/HuLCAL7UzY</p>
+                        <p><b>58</b> likes, <b>42</b> retweets - <a href=https://twitter.com/statuses/877224683938217984>18:00 20 June 2017</a></p>
+                    </div>
+                </div>
+                
+                <div class="line"></div>
+                
+                <h2>Top media:</h2>
+                
+                <div style="float:left; width: 33.2%;">
+                <div class="container">
+                    <a href="https://twitter.com/statuses/877105016368181248"><img class="pic" src="http://pbs.twimg.com/tweet_video_thumb/DCwaXDTXoAAQ7WW.jpg" />
+                </div>
+                    <p><b>53</b> likes, <b>65</b> retweets
+                    <br> <a href=https://twitter.com/statuses/877105016368181248>10:05 20 June 2017</a></p>
+                </div>
+                
+                <div style="float:left; width: 33.2%;">
+                <div class="container">
+                    <a href=https://twitter.com/statuses/877224683938217984><img class="pic" src="http://pbs.twimg.com/media/DCyHM0rWAAAkXYJ.jpg" />
+                </div>
+                    <p><b>58</b> likes, <b>42</b> retweets
+                    <br> <a href=https://twitter.com/statuses/877224683938217984>18:00 20 June 2017</a></p>
+                </div>
+                
+                <div style="float:right; width: 33.2%;">
+                <div class="container">
+                    
+                    <a href=https://twitter.com/statuses/878659177614323712><img class="pic" src="http://pbs.twimg.com/media/DDGf3V8XkAEsyNY.jpg" />
+                </div>
+                    <p><b>33</b> likes, <b>59</b> retweets
+                    <br> <a href=https://twitter.com/statuses/878659177614323712>17:00 24 June 2017</a></p>
+                </div>
+                
+                <div style="clear:both"></div>
+                
+                <div class="line"></div>
+                
+                <h2>Most popular mentions:</h2>
+                
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/830739564000055297/sszvp--c_normal.jpg" class="profile"></div>
+                    <div class="tweetext"><b>TeacherToolkit</b> - 166,092 followers
+                        <br>
+                        <p>Eighteen months late: @educationgovuk, @JustineGreening &amp; @NickGibbUK have yet to publish the #EBaccReport consultation. 
+
+#EBacc #SLTchat https://t.co/S8caeyQZqe</p>
+                        <p><b>16</b> likes, <b>37</b> retweets - <a href=https://twitter.com/statuses/876883856003125248>19:26 19 June 2017</a></p>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/695913445112352768/R9CZIxZk_normal.jpg" class="profile"></div>
+                    <div class="tweetext"><b>rob_kelsall</b> - 3,287 followers
+                        <br>
+                        <p>And the @educationgovuk plan to drop requirements for new build schools to install sprinkler systems. RT to tell them they're wrong. https://t.co/imaMhRpvcj</p>
+                        <p><b>5</b> likes, <b>38</b> retweets - <a href=https://twitter.com/statuses/876906735608492033>20:57 19 June 2017</a></p>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/482550042138787840/MM25UxM6_normal.jpeg" class="profile"></div>
+                    <div class="tweetext"><b>ty_goddard</b> - 4,707 followers
+                        <br>
+                        <p>Really pleased. Long chats / patient policy work @EdtechukHQ @educationgovuk announce formation of #edtech stakeholder group. https://t.co/VV32JYlxpY</p>
+                        <p><b>18</b> likes, <b>13</b> retweets - <a href=https://twitter.com/statuses/877943234718302208>17:35 22 June 2017</a></p>
+                    </div>
+                </div>
+            
+            
+            </div>
+        
+        </div>
+        
+        <div style="clear:both"></div>
+        
+        <button onclick="goBack()" style="background-color: rgba(0,88,161,1); margin: 4px; padding: 15px 32px; border: none; color: white;">&larr; Go back</button>
+        
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+        
+        </body>
+        </html>
+        
+        
+        
